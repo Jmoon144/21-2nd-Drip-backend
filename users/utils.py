@@ -2,7 +2,7 @@ import json, jwt
 
 from django.http import JsonResponse
 
-from drip_settings import SECRET_KEY, ALGORITHM
+from drip.env import SECRET_KEY, ALGORITHM
 
 from .models import User
 

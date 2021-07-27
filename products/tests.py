@@ -8,7 +8,7 @@ from .models        import Category, Search, SubCategory, Product
 from reviews.models import Review
 from users.models   import User
 from orders.models  import Order, Status
-from drip_settings  import SECRET_KEY, ALGORITHM
+from drip.production  import SECRET_KEY, ALGORITHM
 
 class ProductListView(TestCase):
     @classmethod

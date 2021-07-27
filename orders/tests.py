@@ -5,7 +5,7 @@ from django.test     import TestCase, Client
 from orders.models   import Order, Status
 from products.models import Category, Product, Search, SubCategory
 from users.models    import User
-from drip_settings   import SECRET_KEY, ALGORITHM
+from drip.production   import SECRET_KEY, ALGORITHM
 from reviews.models  import Review
 
 class OrderViewTest(TestCase):
