@@ -3,7 +3,7 @@ import unittest, jwt
 from django.test import Client, TestCase
 from unittest.mock import patch, MagicMock
 
-from drip_settings import SECRET_KEY, ALGORITHM
+from drip.production import SECRET_KEY, ALGORITHM
 from .models import User
 
 class SigninTest(TestCase):
