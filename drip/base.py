@@ -12,7 +12,7 @@ https://docs.djangoproject.com/en/3.2/ref/settings/
 import os
 from pathlib import Path
 
-from production import DATABASES, SECRET_KEY, ACCESS_KEY, SECRET_ACCESS_KEY
+from .production import DATABASES, SECRET_KEY, ACCESS_KEY, SECRET_ACCESS_KEY
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
