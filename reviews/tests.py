@@ -5,7 +5,7 @@ from unittest.mock     import patch, MagicMock
 from django.core.files import File
 from django.test import Client, TestCase
 
-from drip_settings   import SECRET_KEY, ALGORITHM
+from drip.production   import SECRET_KEY, ALGORITHM
 from users.models    import User
 from products.models import Product, Search, SubCategory, Category
 from .models         import Comment, Review, Like
