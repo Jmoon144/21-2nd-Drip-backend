@@ -6,7 +6,7 @@ from django.views import View
 from django.http import JsonResponse
 from datetime import datetime
 
-from drip.production import ACCESS_KEY, SECRET_ACCESS_KEY
+from drip.env import ACCESS_KEY, SECRET_ACCESS_KEY
 from users.utils import login_decorator
 from .models import Like, Review, Comment
 from products.models import Product

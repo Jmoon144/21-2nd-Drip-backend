@@ -5,7 +5,7 @@ from django.http      import JsonResponse
 from django.db.utils import IntegrityError
 
 from .models        import User
-from drip.production  import SECRET_KEY, ALGORITHM
+from drip.env  import SECRET_KEY, ALGORITHM
 
 class KakaoSigninView(View):
     def post(self, request):
