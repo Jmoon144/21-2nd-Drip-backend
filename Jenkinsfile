@@ -17,7 +17,7 @@ pipeline {
         }
         stage('Build-test') {
             steps {
-                sh 'python manage.py test --settings=development'
+                sh 'python manage.py test --settings=drip.development'
             }
         }
         stage('Staging deploy') {
